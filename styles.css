@@ -19,32 +19,43 @@ body {
 }
 
 .card__photoNameRating {
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  /* NOS IRVE EL JUSTIFYYY AHHHHHH */
+  justify-content: center;
+  font-size: 40px;
   color: #5db37b;
   font-size: 1.1rem;
 }
 
 .card__photoNameRating__image {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
+  border: 2px solid white;
+  outline: 3px solid#5db37b;
   object-fit: cover;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.card__photoNameRating__name {
+  align-self: center;
+  margin: 5px;
+}
+
+.card__photoNameRating__estrellas {
+  display: flex;
+  justify-content: center;
 }
 
 .card__photoNameRating__estrellas--selected {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   background: #5db37b;
   border-radius: 50%;
-}
-
-.card__photoNameRating__estrellas--selected {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: #5db37b;
-  border-radius: 50%;
+  margin: 0 3px;
 }
 
 .card__photoNameRating__estrellas--blank {
@@ -54,19 +65,18 @@ body {
   background: white;
   border-radius: 50%;
   border: 1px solid #5db37b;
+  margin: 0 3px;
 }
 
 .card__description {
   text-align: justify;
-  font-size: 1.1rem;
+  font-size: 17px;
 }
 
 .card__buttons {
-  /* CENTRAR! 
-       Y HACER QUE OCUPEN UN ANCHO DETERMINADO*/
-  /* display: flex; */
-  align-items: center;
-  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
 }
 
 .card__buttons__button--normal {
@@ -75,7 +85,10 @@ body {
   border: 2px solid #5db37b;
   color: #5db37b;
   padding: 10px 30px;
-  margin: 5px;
+  /* margin: 5px; */
+  justify-content: center;
+  flex-basis: 49%;
+  font-size: inherit;
 }
 
 .card__buttons__button--selected {
@@ -84,5 +97,8 @@ body {
   border: 2px solid #5db37b;
   color: white;
   padding: 10px 30px;
-  margin: 5px;
+  /* margin: 5px; */
+  justify-content: center;
+  flex-basis: 49%;
+  font-size: inherit;
 }
